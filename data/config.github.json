@@ -167,9 +167,11 @@
       ],
       "keywords": [
         "Elon Musk",
-        "马斯克"
+        "马斯克",
+        "breaking news",
+        "trending"
       ],
-      "fetch_limit": 100,
+      "fetch_limit": 20,
       "fetch_reply_text": false,
       "max_replies_per_tweet": 3,
       "max_tweets_to_expand": 5,
@@ -192,7 +194,7 @@
     "time_window_hours": 24
   },
   "digest": {
-    "max_items": 10,
+    "max_items": 20,
     "profile_order": [
       "tech-news",
       "tech-blog",
