@@ -169,7 +169,7 @@
         "Elon Musk",
         "马斯克"
       ],
-      "fetch_limit": 20,
+      "fetch_limit": 100,
       "fetch_reply_text": false,
       "max_replies_per_tweet": 3,
       "max_tweets_to_expand": 5,
@@ -179,7 +179,7 @@
       "actor_id": "altimis~scweet"
     },
     "google_news": {
-      "enabled": true,
+      "enabled": false,
       "query": "Elon Musk",
       "language": "en",
       "country": "US",
