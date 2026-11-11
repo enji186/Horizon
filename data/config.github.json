@@ -36,33 +36,33 @@
       {
         "type": "user_events",
         "username": "karpathy",
-        "enabled": true,
+        "enabled": false,
         "profile": "tech-news"
       },
       {
         "type": "repo_releases",
         "owner": "vllm-project",
         "repo": "vllm",
-        "enabled": true,
+        "enabled": false,
         "profile": "tech-news"
       },
       {
         "type": "repo_releases",
         "owner": "sgl-project",
         "repo": "sglang",
-        "enabled": true,
+        "enabled": false,
         "profile": "tech-news"
       },
       {
         "type": "repo_releases",
         "owner": "triton-lang",
         "repo": "triton",
-        "enabled": true,
+        "enabled": false,
         "profile": "tech-news"
       }
     ],
     "hackernews": {
-      "enabled": true,
+      "enabled": false,
       "fetch_top_stories": 30,
       "min_score": 150,
       "profile": "tech-news"
@@ -71,14 +71,14 @@
       {
         "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
-        "enabled": true,
+        "enabled": false,
         "category": "ai-tools",
         "profile": "tech-news"
       },
       {
         "name": "vLLM Blog",
         "url": "https://vllm.ai/blog/rss.xml",
-        "enabled": true,
+        "enabled": false,
         "category": "llm-inference",
         "profile": "tech-blog",
         "content_extractor": "trafilatura"
@@ -86,7 +86,7 @@
       {
         "name": "Sean Goedecke",
         "url": "https://www.seangoedecke.com/rss.xml",
-        "enabled": true,
+        "enabled": false,
         "category": "software-engineering",
         "profile": "tech-blog",
         "content_extractor": "trafilatura"
@@ -94,7 +94,7 @@
       {
         "name": "CNBC Finance",
         "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664",
-        "enabled": true,
+        "enabled": false,
         "category": "finance",
         "profile": "finance-news",
         "content_extractor": "trafilatura"
@@ -102,27 +102,27 @@
       {
         "name": "GitHub Trending - Daily",
         "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
-        "enabled": true,
+        "enabled": false,
         "category": "github-trending",
         "profile": "tech-news"
       },
       {
         "name": "Semianalysis",
         "url": "https://newsletter.semianalysis.com/feed",
-        "enabled": true,
+        "enabled": false,
         "category": "semiconductors",
         "profile": "tech-news"
       },
       {
         "name": "LWN.net",
         "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": true,
+        "enabled": false,
         "category": "linux-kernel",
         "profile": "tech-news"
       }
     ],
     "reddit": {
-      "enabled": true,
+      "enabled": false,
       "subreddits": [
         {
           "subreddit": "MachineLearning",
@@ -147,7 +147,7 @@
       "fetch_comments": 10
     },
     "telegram": {
-      "enabled": true,
+      "enabled": false,
       "channels": [
         {
           "channel": "zaihuapd",
@@ -163,23 +163,16 @@
     "twitter": {
       "enabled": true,
       "users": [
-        "elonmusk",
-        "Tesla",
-        "SpaceX",
-        "xai"
+        "elonmusk"
       ],
       "keywords": [
         "Elon Musk",
-        "Tesla",
-        "SpaceX",
-        "xAI",
-        "Grok",
         "马斯克"
       ],
-      "fetch_limit": 100,
+      "fetch_limit": 20,
       "fetch_reply_text": false,
       "max_replies_per_tweet": 3,
-      "max_tweets_to_expand": 10,
+      "max_tweets_to_expand": 5,
       "reply_min_likes": 5,
       "profile": "tech-news",
       "apify_token_env": "APIFY_TOKEN",
@@ -187,10 +180,10 @@
     },
     "google_news": {
       "enabled": true,
-      "query": "Elon Musk Tesla SpaceX",
+      "query": "Elon Musk",
       "language": "en",
       "country": "US",
-      "max_results": 50,
+      "max_results": 20,
       "profile": "tech-news",
       "category": "news"
     }
@@ -199,7 +192,7 @@
     "time_window_hours": 24
   },
   "digest": {
-    "max_items": 20,
+    "max_items": 10,
     "profile_order": [
       "tech-news",
       "tech-blog",
